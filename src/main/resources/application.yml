@@ -1,0 +1,21 @@
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+yuapi:
+  client:
+    access-key: shanyi
+    secret-key:
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: trace
+knife4j:
+  config:
+    scan-path: com.api.apiinterface.controller
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
